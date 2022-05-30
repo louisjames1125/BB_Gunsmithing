@@ -1,0 +1,511 @@
+/* Importing fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Rye&family=Yeseva+One&display=swap');
+
+/* Doing a CSS reset on the entire website */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Setting variables for the different colors that will be used */
+:root {
+    --america-red: #B22234;
+    --america-blue: #0A3161;
+    --america-white: #FFFFFF;
+    --lightest-gray: rgb(231, 230, 230);
+    --light-gray: #777;
+    --dark-gray: #666;
+    --darkest-gray: #333;
+    --black-gray: #222;
+    --facebook-blue: #4267B2;
+    --off-white: #FEFCF9;
+}
+
+/* Adjusting the font of every element */
+body {
+    background: var(--off-white);
+    color: var(--light-gray);
+    font-family: "Rye", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+/* UTILITIES */
+
+.container {
+    margin: 0 auto;
+    max-width: 100%;
+    width: 1000px;
+}
+
+.noSelect {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.noSelect:focus {
+    outline: none !important;
+}
+
+/* Making a header for the top of the page */
+.header {}
+
+/* Centering the navbar and all of its links */
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Centering the title of the website */
+.title {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3em 0 1.5em;
+}
+
+/* The companies name */
+.company-name {
+    cursor: pointer;
+    font-size: 2rem;
+    opacity: 0.95;
+    transition: 0.1s;
+}
+
+/* The company names href */
+.company-name__href {
+    color: black;
+    text-decoration: none;
+}
+
+/* Styles to change the color of the company names href when you hover over it */
+.company-name__href:hover {
+    opacity: 0.8;
+}
+
+/* The companies info */
+.company-info {}
+
+/* The group of links */
+.links {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 1.5em 0 0;
+}
+
+/* Each individual links styling */
+.link {
+    cursor: pointer;
+    font-size: 1.25rem;
+    padding: 0.75em 0.5em;
+    transition: 0.25s;
+}
+
+/* Each links hover event */
+.link:hover {
+    background: var(--lightest-gray);
+}
+
+/* Each links href */
+.href {
+    color: var(--dark-gray);
+    text-decoration: none;
+}
+
+/* Styles to change the color of the href that the user is currently viewing */
+.href--active {
+    color: black;
+    font-weight: 600;
+}
+
+/* Centering and enlarging the hero image */
+.hero {
+    background-image: linear-gradient(to right bottom, rgba(178, 34, 52, 0.8), rgba(10, 49, 97, 0.8)), url(../images/hero1.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 4em 0;
+}
+
+/* Centering the call to action area (inside the image) */
+.CTA {
+    align-items: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Making the call to actions title bigger */
+.CTA__title {
+    font-size: 3rem;
+    margin-bottom: 0.25em;
+}
+
+/* Adding space between the call to actions text and the button */
+.CTA__text {
+    margin-bottom: 5em;
+}
+
+/* The contact us button */
+.CTA__button {
+    background: var(--america-blue);
+    border-radius: 2.5px;
+    padding: 0.75em 1.5em;
+    transition: 0.1s;
+}
+
+/* Changing the opacity of the button when you hover over it */
+.CTA__button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+/* The link within the CTA button */
+.CTA__href {
+    color: white;
+    text-decoration: none;
+}
+
+/* The main content of the webpage */
+.main {}
+
+.message {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    line-height: 2.5;
+    padding: 5.36em 2.5em;
+    text-align: center;
+}
+
+.message__title {
+    color: var(--america-red);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.message__text {
+    color: var(--darkest-gray);
+    font-size: 1.25rem;
+}
+
+.services {
+    display: flex;
+    margin: 2.5em auto 7.5em;
+    max-width: 100%;
+    width: 1000px;
+}
+
+.service {
+    margin: 0 2em;
+    width: 100%;
+}
+
+.service__image {
+    height: 200px;
+    width: 100%;
+}
+
+.service__title {
+    color: var(--black-gray);
+}
+
+.service__description {
+    color: var(--black-gray);
+    font-size: 0.9rem;
+}
+
+.founded {
+    display: flex;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 1000px;
+}
+
+.founded__left {
+    margin: 0 2em;
+    padding: 1em 3em 1em 0em;
+    flex: 60%;
+}
+
+.founded__title, .founded__headline {
+    color: var(--darkest-gray);
+}
+
+.founded__title {
+    margin: 0 0 0.5em;
+}
+
+.founded__headline {
+    margin: 0 0 1em;
+}
+
+.founded__text {
+    color: var(--black-gray);
+}
+
+.founded__image {
+    border: 1px solid var(--america-red);
+    max-width: 100%;
+    flex: 50%;
+}
+
+.moreHelp {
+    margin: 7em auto;
+    max-width: 100%;
+    padding: 0 2em;
+    width: 1000px;
+}
+
+.moreHelp__title {
+    color: var(--darkest-gray);
+    margin: 0 0 1em;
+}
+
+.moreHelp__text {
+    color: var(--black-gray);
+}
+
+.hours {
+    margin: 5em auto;
+    max-width: 100%;
+    padding: 0 2em;
+    width: 1000px;
+}
+
+.hours__title {
+    color: var(--darkest-gray);
+}
+
+.hours__text {
+    color: var(--darkest-gray);
+}
+
+.footer {
+    background: var(--america-blue);
+    color: var(--off-white);
+    padding: 2em 0;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2em;
+}
+
+.footer__title {
+    font-size: 1.75rem;
+    margin: 0 0 1em;
+    text-transform: uppercase;
+}
+
+.footer__logo {
+    color: red;
+}
+
+.footer__logo:hover {
+    color: var(--america-red);
+}
+
+.footer__heading {
+    font-size: 1.25rem;
+}
+
+.footer__email, .footer__phoneNumber, .footer__address {
+    margin: 0 0 1.75em;
+}
+
+.footer__link {
+    color: red;
+    text-decoration: none;
+}
+
+.footer__link:hover {
+    color: var(--america-red);
+
+}
+
+.footer__map {
+    height: 75px;
+    width: 150px;
+}
+
+.copyright {
+    color: var(--darkest-gray);
+    margin: 1em 0;
+    text-align: center;
+}
+
+.menu-btn {
+    display: none;
+}
+
+.verticalLinksGroup {
+    display: none;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.verticalLinks {
+    list-style: none;
+}
+
+.verticalLink {
+    border-bottom: 1px solid var(--darkest-gray);
+    font-size: 1.5rem;
+    padding: 1em 0;
+    width: 100vw;
+}
+
+.verticalLink:hover {
+    background: var(--lightest-gray);
+}
+
+@media only screen and (max-width: 1100px) {
+    .verticalLinksGroup--open {
+        display: initial;
+    }
+
+
+    .links {
+        display: none;
+    }
+
+    /* ANIMATIONS */
+
+    .menu-btn {
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+        /* border: 3px solid #fff; */
+    }
+
+    .menu-btn__burger {
+        width: 50px;
+        height: 6px;
+        background: var(--darkest-gray);
+        border-radius: 5px;
+        box-shadow: 0 1px 2px var(--black-gray);
+        transition: all .5s ease-in-out;
+    }
+
+    .menu-btn__burger::before,
+    .menu-btn__burger::after {
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 6px;
+        background: var(--darkest-gray);
+        border-radius: 5px;
+        box-shadow: 0 1px 2px var(--black-gray);
+        transition: all .5s ease-in-out;
+    }
+
+    .menu-btn__burger::before {
+        transform: translateY(-16px);
+    }
+
+    .menu-btn__burger::after {
+        transform: translateY(16px);
+    }
+
+    /* ANIMATION */
+    .menu-btn.open .menu-btn__burger {
+        transform: translateX(-50px);
+        background: transparent;
+        box-shadow: none;
+    }
+
+    .menu-btn.open .menu-btn__burger::before {
+        transform: rotate(45deg) translate(35px, -35px);
+    }
+
+    .menu-btn.open .menu-btn__burger::after {
+        transform: rotate(-45deg) translate(35px, 35px);
+    }
+
+    .services {
+        flex-direction: column;
+        margin: 0 auto 5em;
+        max-width: 500px;
+        width: 75%;
+    }
+
+    .service {
+        margin: 2em 0;
+    }
+
+    .service__image {
+        height: 300px;
+    }
+
+    .service__title {
+        margin: 0.25em 0;
+    }
+
+    .founded {
+        flex-direction: column;
+        max-width: 500px;
+        width: 75%;
+    }
+
+    .founded__left {
+        margin: 0 0 4em;
+        padding: 0;
+    }
+
+    .moreHelp {
+        width: 95%;
+    }
+
+    .hours {
+        width: 95%;
+    }
+
+    .footer .container {
+        flex-direction: column;
+    }
+
+    .footer__title {
+        margin: 0.3em 0;
+    }
+
+    .footer__logo {
+        margin: 0 0 1em;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .service__image {
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+
+    .service__image {
+        height: 200px;
+    }
+
+}

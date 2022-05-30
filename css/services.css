@@ -1,0 +1,132 @@
+.services__first {
+    color: var(--black-gray);
+    display: flex;
+    margin: 6em 0;
+}
+
+.services__third {
+    padding: 0 2em;
+    text-align: center;
+}
+
+.services__image {
+    height: 100px;
+}
+
+.services__title {
+    font-size: 1.75rem;
+    margin: 0.5em 0;
+}
+
+.services__second {
+    color: var(--black-gray);
+    display: flex;
+    flex-direction: column;
+}
+
+.services__second .services__image {
+    flex: 40%;
+    height: 100%;
+}
+
+.services__second__first {
+    display: flex;
+    margin: 0 0 4em;
+}
+
+.services__second__second {
+    display: flex;
+    margin: 0 0 4em;
+}
+
+.services__second div {
+    flex: 50%;
+}
+
+.services__second__first div {
+    padding: 0 0 0 2em;
+}
+
+.services__second__second div {
+    padding: 0 2em 0 0;
+}
+
+
+.services__bottom {
+    color: var(--black-gray);
+    margin: 0 0 6em;
+}
+
+@media only screen and (max-width: 1100px) {
+    .services__first {
+        flex-direction: column;
+    }
+
+    .services__third {
+        padding: 0 20em;
+        margin: 2.5em 0;
+        text-align: center;
+    }
+
+    .services__second {
+        padding: 0 1em;
+    }
+
+    .services__second__first {
+        display: initial;
+        margin: 0 0 2em;
+    }
+
+    .services__second__second {
+        display: initial;
+    }
+
+    .services__second .services__image:nth-child(1) {
+        margin: 0 0 1em;
+        width: 70%;
+    }
+
+    .services__second .services__image:nth-child(2) {
+        margin: 2em 0 0;
+    }
+
+    .services__second__first div {
+        padding: 0;
+    }
+
+    .services__bottom {
+        padding: 0 1em;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .services__title {
+        font-size: 1.5rem;
+    }
+
+    .services__image {
+        height: 75px;
+    }
+
+    .services__text {
+        font-size: 0.9rem;
+    }
+
+    .services__first {
+        margin: 3em 0;
+    }
+
+    .services__third {
+        padding: 0 2em;
+    }
+
+    .services__second__second {
+        margin: 0 0 2.5em;
+    }
+
+    .services__second .services__image:nth-child(1) {
+        padding: 0 1em;
+        text-align: center;
+        width: 100%;
+    }
+}
