@@ -260,8 +260,9 @@ body {
 
 .founded__image {
     border: 1px solid var(--america-red);
-    max-width: 100%;
     flex: 50%;
+    height: 200px;
+    max-width: 100%;
 }
 
 .moreHelp {
