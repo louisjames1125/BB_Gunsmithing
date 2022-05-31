@@ -261,7 +261,7 @@ body {
 .founded__image {
     border: 1px solid var(--america-red);
     flex: 50%;
-    height: 200px;
+    height: 400px;
     max-width: 100%;
 }
 
