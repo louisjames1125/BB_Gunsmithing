@@ -504,6 +504,11 @@ body {
     .service__image {
         height: 250px;
     }
+    
+    .founded__image {
+        height: 300px;
+    }
+
 }
 
 @media only screen and (max-width: 500px) {
