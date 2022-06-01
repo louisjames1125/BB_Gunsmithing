@@ -507,7 +507,7 @@ body {
     }
     
     .founded__image {
-        flex: 15%;
+        align-self: flex-start;
         height: 300px;
     }
 
