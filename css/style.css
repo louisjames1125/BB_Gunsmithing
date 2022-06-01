@@ -509,7 +509,7 @@ body {
     .founded__image {
         align-self: flex-start;
         height: 300px;
-        min-height: auto;
+        width: auto;
     }
 
 }
